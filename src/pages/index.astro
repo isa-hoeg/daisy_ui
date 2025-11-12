@@ -1,15 +1,268 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Footer from '../components/Footer.astro';
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	<section class="hero">
+  <div class="hero">
+    <img src="../public/img/naturvin.jpg"
+      alt="naturvin"
+      class="w-full h-full max-h-[66vh] object-cover rounded-lg" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-2 text-7xl font-bold">Smagen af natur</h1>
+        <h2 class="mb-5 text-xl">Oplev naturvinens rene aromaer og håndværk fra jord til glas</h2>
+        <button class="btn btn-primary">Skal du smage?</button>
+      </div>
+    </div>
+  </div>
+  </section>
+ <section class="m-10 flex justify-center items-center">
+  <div class="stats stats-vertical lg:stats-horizontal shadow px-8 bg-base-200">
+    <div class="stat">
+      <div class="stat-title">Flasker solgt</div>
+      <div class="stat-value">31K</div>
+      <div class="stat-desc">2024</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Abonnementer</div>
+      <div class="stat-value">4,200</div>
+      <div class="stat-desc">↗︎ 400 (22%)</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Leveringer</div>
+      <div class="stat-value">1,200</div>
+      <div class="stat-desc">↗︎ 400 (22%)</div>
+    </div>
+  </div>
+</section>
+<section class="max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold pt-5 px-10 text-center">Tørstig efter en flaske?</h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-10">
+    
+    <div class="card bg-base-200 w-full shadow-ml">
+      <figure>
+        <img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+        <img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+    <img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+	<img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+	<img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+		<img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+	<img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 w-full shadow-sm">
+      <figure>
+        <img src="../public/img/naturvin.jpg" alt="naturvin" class="min-h-[20vh]" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Colibrìni Inzolia-Catarratto</h2>
+        <p>Colibrini Inzolia-Catarratto er en frisk og intens økologisk vin fra Sicilien</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Køb nu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="max-w-xl mx-auto">
+  <h2 class="text-3xl font-bold mt-6 px-10 text-center">Vil du være en del af naturvinsfællesskabet?</h2>
+  <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 pt-10 justify-items-center">
+	
+		<div class="card w-70 bg-base-200 shadow-sm">
+		  <div class="card-body">
+			<span class="badge badge-xs badge-warning">Popular</span>
+			<div class="flex justify-between">
+			<h2 class="text-2xl font-bold">Lidt tørstig</h2>
+			<span class="text-ml">229 kr./md.</span>
+			</div>
+			<ul class="mt-6 flex flex-col gap-2 text-xs">
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span>High-resolution image generation</span>
+			</li>
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span>Customizable style templates</span>
+			</li>
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span>Batch processing capabilities</span>
+			</li>
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span>AI-driven image enhancements</span>
+			</li>
+			<li class="opacity-50">
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span class="line-through">Seamless cloud integration</span>
+			</li>
+			<li class="opacity-50">
+				<svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+				<span class="line-through">Real-time collaboration tools</span>
+			</li>
+			</ul>
+			<div class="mt-6">
+			<button class="btn btn-primary btn-block">Abonner</button>
+			</div>
+		</div>
+		</div>
+		<div class="card w-70 bg-base-200 shadow-sm">
+  		<div class="card-body">
+  		  <span class="badge badge-xs badge-info">Most Popular</span>
+   		 <div class="flex justify-between">
+      <h2 class="text-2xl font-bold">Meget tørstig</h2>
+      <span class="text-ml">449 kr./md.</span>
+   		 </div>
+   		 <ul class="mt-6 flex flex-col gap-2 text-xs">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span>High-resolution image generation</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span>Customizable style templates</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span>Batch processing capabilities</span>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span>AI-driven image enhancements</span>
+      </li>
+      <li class="opacity-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span class="line-through">Seamless cloud integration</span>
+      </li>
+      <li class="opacity-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span class="line-through">Real-time collaboration tools</span>
+      </li>
+    	</ul>
+    	<div class="mt-6">
+      <button class="btn btn-primary btn-block">Abonner</button>
+    	</div>
+  		</div>
+		</div>
+  </div>
+</section>
+<section class="max-w-xl mx-auto justify-items-center">
+	   <h2 class="text-3xl font-bold text-center pt-12">Har du nogle spørgsmål?</h2>
+<fieldset class="fieldset bg-base-200 rounded-box w-sm border px-5">
+  <legend class="fieldset-legend pt-20">Kontakt vores kundeservice</legend>
+
+  <label class="label">Navn</label>
+  <input type="email" class="input" placeholder="Joakim Larsen" />
+
+  <label class="label">E-mail</label>
+  <input type="password" class="input" placeholder="jl@gmail.com" />
+
+  <fieldset class="fieldset">
+  <legend class="fieldset-legend">Dit spørgsmål:</legend>
+  <textarea class="textarea h-25" placeholder="Hvilken vin skal jeg vælge til...?"></textarea>
+</fieldset>
+
+  <button class="btn btn-neutral my-4">Send besked</button>
+</fieldset>
+</section>
+<section class="mx-auto">
+	<div class="bg-base-200">
+			<Footer></Footer>
+	</div>
+
+</section>
+
+
+	
+
+
 </MainLayout>
